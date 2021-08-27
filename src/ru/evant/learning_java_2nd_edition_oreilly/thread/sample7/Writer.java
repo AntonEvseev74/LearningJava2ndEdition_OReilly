@@ -14,7 +14,6 @@ public class Writer extends Thread {
 
     @Override
     public void run() {
-        System.out.println("Сохранение документа в: " + path);
 
         synchronized (doc) {
             while ( ! doc.isReady()) {
@@ -25,6 +24,8 @@ public class Writer extends Thread {
                 }
             }
         }
+
+        System.out.println("Сохранение документа в: " + path);
 
         try (FileOutputStream fos = new FileOutputStream(path)) {
             fos.write(doc.getData());
