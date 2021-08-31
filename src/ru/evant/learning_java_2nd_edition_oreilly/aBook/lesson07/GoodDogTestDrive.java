@@ -1,4 +1,4 @@
-package ru.evant.learning_java_2nd_edition_oreilly.lesson07;
+package ru.evant.learning_java_2nd_edition_oreilly.aBook.lesson07;
 
 public class GoodDogTestDrive {
     public static void main(String[] args) {

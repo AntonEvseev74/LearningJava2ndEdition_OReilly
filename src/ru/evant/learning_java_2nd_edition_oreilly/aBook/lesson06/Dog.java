@@ -1,4 +1,4 @@
-package ru.evant.learning_java_2nd_edition_oreilly.lesson06;
+package ru.evant.learning_java_2nd_edition_oreilly.aBook.lesson06;
 
 /*
  * Самообучение по книге:

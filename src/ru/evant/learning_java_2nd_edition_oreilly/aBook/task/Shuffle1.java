@@ -1,4 +1,4 @@
-package ru.evant.learning_java_2nd_edition_oreilly.task;
+package ru.evant.learning_java_2nd_edition_oreilly.aBook.task;
 
 /*
  * Самообучение по книге:
