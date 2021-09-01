@@ -3,8 +3,8 @@ package ru.evant.learning_java_2nd_edition_oreilly.aBook.lesson08.V3;
 import java.util.ArrayList;
 
 public class DotComBust {
-    private GameHelper helper = new GameHelper();
-    private ArrayList<DotCom> dotComList = new ArrayList<DotCom>();
+    private final GameHelper helper = new GameHelper();
+    private final ArrayList<DotCom> dotComList = new ArrayList<>();
     private int numOfGuesses = 0;
 
     public void setUpGame(){
