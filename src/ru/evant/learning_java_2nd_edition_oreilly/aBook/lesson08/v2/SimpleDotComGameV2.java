@@ -14,18 +14,24 @@ package ru.evant.learning_java_2nd_edition_oreilly.aBook.lesson08.v2;
  *  версия 1
  */
 
-import ru.evant.learning_java_2nd_edition_oreilly.aBook.lesson08.v1.GameHelperV1;
-import ru.evant.learning_java_2nd_edition_oreilly.aBook.lesson08.v1.SimpleDotComV1;
+
+
+import java.util.ArrayList;
 
 public class SimpleDotComGameV2 {
     public static void main(String[] args) {
         int numOfGuesses = 0;
-        GameHelperV1 helper = new GameHelperV1();
+        GameHelperV2 helper = new GameHelperV2();
 
-        SimpleDotComV1 theDotCom = new SimpleDotComV1();
+        SimpleDotComV2 theDotCom = new SimpleDotComV2();
         int randomNum = (int) (Math.random() * 5);
 
-        int[] locations = {randomNum, randomNum + 1, randomNum + 2};
+        //int[] locations = {randomNum, randomNum + 1, randomNum + 2};
+        ArrayList<String> locations = new ArrayList<>();
+        locations.add(randomNum + "");
+        locations.add((randomNum+1) + "");
+        locations.add((randomNum+2) + "");
+
         theDotCom.setLocationCells(locations);
         boolean isAlive = true;
 
