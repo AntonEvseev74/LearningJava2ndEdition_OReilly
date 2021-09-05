@@ -11,7 +11,7 @@ package ru.evant.learning_java_2nd_edition_oreilly.aBook.lesson08.v2;
 
 /*
  * Аналог игры "Морской бой" - "Потопи сайт"
- *  версия 1
+ *  версия 2
  */
 
 

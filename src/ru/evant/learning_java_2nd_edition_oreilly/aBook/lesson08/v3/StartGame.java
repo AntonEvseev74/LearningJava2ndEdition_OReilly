@@ -1,5 +1,19 @@
 package ru.evant.learning_java_2nd_edition_oreilly.aBook.lesson08.v3;
 
+/*
+ * Самообучение по книге:
+ * "Изучаем Java. 2е издание.O`Reilly"
+ * Перевод на русский язык. ООО "Айдиономикс", 2011
+ * Оформление. ООО "Издательство "Эксмо", 2021
+ *
+ * Код со страниц: 170-183
+ */
+
+/*
+ * Аналог игры "Морской бой" - "Потопи сайт"
+ *  версия 3
+ */
+
 public class StartGame {
     public static void main(String[] args) {
         DotComBust game = new DotComBust(); // Создаем игровой объект
