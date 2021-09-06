@@ -1,4 +1,4 @@
-package ru.evant.learning_java_2nd_edition_oreilly.aBook.lesson09.example2;
+package ru.evant.learning_java_2nd_edition_oreilly.aBook.lesson09.example3;
 
 /*
  * Самообучение по книге:
@@ -6,14 +6,14 @@ package ru.evant.learning_java_2nd_edition_oreilly.aBook.lesson09.example2;
  * Перевод на русский язык. ООО "Айдиономикс", 2011
  * Оформление. ООО "Издательство "Эксмо", 2021
  *
- * Код к странице: 201
+ * Код к странице: 204
  */
 
 /*
  * Наследование
  */
 
-public class Animal {
+public class Animal3 {
     /* Переменные экзампляра: */
     String picture;                 // Имя JPEG-файла, который ассоциируется с данным животным
     String food;                    // Тип еды, которую это животное употребляет. Пока дапускается 2 значения: мясо и трава.

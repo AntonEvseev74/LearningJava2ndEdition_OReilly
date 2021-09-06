@@ -1,4 +1,4 @@
-package ru.evant.learning_java_2nd_edition_oreilly.aBook.lesson09.example2;
+package ru.evant.learning_java_2nd_edition_oreilly.aBook.lesson09.example3;
 
 /*
  * Самообучение по книге:
@@ -13,9 +13,9 @@ package ru.evant.learning_java_2nd_edition_oreilly.aBook.lesson09.example2;
  * Наследование
  */
 
-public class ProgramTest {
+public class ProgramTest3 {
     public static void main(String[] args) {
-        Cat cat = new Cat();
+        Cat3 cat = new Cat3();
         cat.picture = "КОТ";
         cat.food = "Мясо";
         cat.hunger = 10;
@@ -28,7 +28,7 @@ public class ProgramTest {
         cat.sleep();
         cat.roam();
 
-        Dog dog = new Dog();
+        Dog3 dog = new Dog3();
         dog.picture = "СОБАКА";
         dog.food = "Мясо";
         dog.hunger = 5;
@@ -41,7 +41,7 @@ public class ProgramTest {
         dog.sleep();
         dog.roam();
 
-        Hippo hippo = new Hippo();
+        Hippo3 hippo = new Hippo3();
         hippo.picture = "ГОПОПОТАМ";
         hippo.food = "Траву";
         hippo.hunger = 8;
@@ -54,7 +54,7 @@ public class ProgramTest {
         hippo.sleep();
         hippo.roam();
 
-        Lion lion = new Lion();
+        Lion3 lion = new Lion3();
         lion.picture = "КОТ";
         lion.food = "Мясо";
         lion.hunger = 4;
@@ -67,7 +67,7 @@ public class ProgramTest {
         lion.sleep();
         lion.roam();
 
-        Tiger tiger = new Tiger();
+        Tiger3 tiger = new Tiger3();
         tiger.picture = "ТИГР";
         tiger.food = "Мясо";
         tiger.hunger = 1;
@@ -80,7 +80,7 @@ public class ProgramTest {
         tiger.sleep();
         tiger.roam();
 
-        Wolf wolf = new Wolf();
+        Wolf3 wolf = new Wolf3();
         wolf.picture = "ВОЛК";
         wolf.food = "Мясо";
         wolf.hunger = 8;
