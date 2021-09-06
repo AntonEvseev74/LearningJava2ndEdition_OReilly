@@ -1,4 +1,4 @@
-package ru.evant.learning_java_2nd_edition_oreilly.aBook.lesson09;
+package ru.evant.learning_java_2nd_edition_oreilly.aBook.lesson09.example1;
 
 public class Surgeon extends Doctor{
 
