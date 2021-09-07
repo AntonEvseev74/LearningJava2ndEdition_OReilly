@@ -1,4 +1,4 @@
-package ru.evant.learning_java_2nd_edition_oreilly.aBook.lesson11;
+package ru.evant.learning_java_2nd_edition_oreilly.aBook.lesson11.example1;
 
 /*
  * Конструкторы:
@@ -9,12 +9,12 @@ package ru.evant.learning_java_2nd_edition_oreilly.aBook.lesson11;
  * вам придется написать его в коде.
  */
 
-public class Tiger extends Feline {
+public class Wolf extends Canine {
 
     /* Конструкторы */
-    public Tiger(){}
+    public Wolf(){}
 
-    public Tiger(String picture, String food, int hunger, int[] boundaries, int[] location){
+    public Wolf(String picture, String food, int hunger, int[] boundaries, int[] location){
         setPicture(picture);
         setFood(food);
         setHunger(hunger);
@@ -22,7 +22,7 @@ public class Tiger extends Feline {
         setLocation(location);
     }
 
-    public Tiger(String picture, String food, int hunger, int[] boundaries,  int locationX, int locationY){
+    public Wolf(String picture, String food, int hunger, int[] boundaries,  int locationX, int locationY){
         setPicture(picture);
         setFood(food);
         setHunger(hunger);
@@ -31,7 +31,7 @@ public class Tiger extends Feline {
         setLocationY(locationY);
     }
 
-    public Tiger(String picture, String food, int hunger, int boundariesWight, int boundariesHeight, int locationX, int locationY){
+    public Wolf(String picture, String food, int hunger, int boundariesWight, int boundariesHeight, int locationX, int locationY){
         setPicture(picture);
         setFood(food);
         setHunger(hunger);
@@ -45,12 +45,12 @@ public class Tiger extends Feline {
     // Поведение животного, когда оно должно издать звук
     @Override // Это ключевое слово обозначает, что метод переопределен - полиморфизм
     public void makeNoise(){
-        System.out.println(getPicture() + ": Рарх, Рарх");
+        System.out.println(getPicture() + ": Вауф, Вауфф");
     }
 
     // Поведение животного при обнаружении своего предпочтительного источника пищи - мяса или травы
     @Override
     public void eat(){
-        System.out.println(getPicture() + ": Я хищный зверь, поэтому ем " + getFood());
+        System.out.println(getPicture() + ": Я лесной хищник, я ем " + getFood());
     }
 }

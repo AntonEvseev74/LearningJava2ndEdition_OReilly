@@ -1,4 +1,4 @@
-package ru.evant.learning_java_2nd_edition_oreilly.aBook.lesson11;
+package ru.evant.learning_java_2nd_edition_oreilly.aBook.lesson11.example1;
 
 /*
  * Конструкторы:
