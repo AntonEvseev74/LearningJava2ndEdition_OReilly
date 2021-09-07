@@ -10,10 +10,10 @@ package ru.evant.learning_java_2nd_edition_oreilly.aBook.lesson09.example3;
  */
 
 /*
- * Наследование
+ * Наследование, Полиморфизм
  */
 
-public class ProgramTest3 {
+public class ProgramTest {
     public static void main(String[] args) {
         Cat3 cat = new Cat3();
         cat.picture = "КОТ";
