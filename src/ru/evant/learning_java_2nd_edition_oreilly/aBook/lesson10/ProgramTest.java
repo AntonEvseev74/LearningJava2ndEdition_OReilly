@@ -47,7 +47,7 @@ public class ProgramTest {
         dog.play();
 
         Hippo hippo = new Hippo();
-        hippo.setPicture("ГОПОПОТАМ");
+        hippo.setPicture("ГИПОПОТАМ");
         hippo.setFood("Траву");
         hippo.setHunger(8);
         hippo.setBoundaries(boundaries);
@@ -61,7 +61,7 @@ public class ProgramTest {
    //     hippo.play();
 
         Lion lion = new Lion();
-        lion.setPicture("КОТ");
+        lion.setPicture("ЛЕВ");
         lion.setFood("Мясо");
         lion.setHunger(4);
         lion.setBoundaries(boundaries);

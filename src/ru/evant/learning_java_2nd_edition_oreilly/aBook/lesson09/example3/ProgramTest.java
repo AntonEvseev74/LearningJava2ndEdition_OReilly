@@ -42,7 +42,7 @@ public class ProgramTest {
         dog.roam();
 
         Hippo3 hippo = new Hippo3();
-        hippo.picture = "ГОПОПОТАМ";
+        hippo.picture = "ГИПОПОТАМ";
         hippo.food = "Траву";
         hippo.hunger = 8;
         hippo.boundaries[0] = 640;
@@ -55,7 +55,7 @@ public class ProgramTest {
         hippo.roam();
 
         Lion3 lion = new Lion3();
-        lion.picture = "КОТ";
+        lion.picture = "ЛЕВ";
         lion.food = "Мясо";
         lion.hunger = 4;
         lion.boundaries[0] = 640;
