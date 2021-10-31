@@ -23,7 +23,7 @@ public class JavaFXApp1 extends Application {
         StackPane root = new StackPane();
         root.getChildren().add(button);
 
-        Scene scene = new Scene(root,300,300);
+        Scene scene = new Scene(root, 300, 300);
 
         primaryStage.setTitle("Привет!");
         primaryStage.setScene(scene);
