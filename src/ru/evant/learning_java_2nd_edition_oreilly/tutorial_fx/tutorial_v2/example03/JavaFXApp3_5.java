@@ -1,6 +1,8 @@
 package ru.evant.learning_java_2nd_edition_oreilly.tutorial_fx.tutorial_v2.example03;
 
+import javafx.animation.FadeTransition;
 import javafx.animation.RotateTransition;
+import javafx.animation.Timeline;
 import javafx.application.Application;
 import javafx.geometry.Pos;
 import javafx.scene.Node;
@@ -11,7 +13,7 @@ import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 
-public class JavaFXApp3_4 extends Application {
+public class JavaFXApp3_5 extends Application {
 
     String defaultText = "Текст по умолчанию";
     String contentText = "Привет!";
@@ -32,6 +34,7 @@ public class JavaFXApp3_4 extends Application {
         btn1.setTranslateY(80);
         btn1.setOnAction(event -> {
             text.setText(contentText);
+            fade(2, text); // *1 Текст мигает
             System.out.println("Log: Нажата кнопка btn1");
             btn1.setVisible(false);
             btn2.setVisible(true);
@@ -45,7 +48,7 @@ public class JavaFXApp3_4 extends Application {
         btn2.setOnAction(event -> {
             text.setText("");
             System.out.println("Log: Нажата кнопка btn2");
-            rotate(2, root, 2); // *1 Повернуть контейнер root
+            rotate(2,root,2);
             btn1.setVisible(true);
             btn2.setVisible(false);
         });
@@ -58,7 +61,17 @@ public class JavaFXApp3_4 extends Application {
         primaryStage.show();
     }
 
-    // *1 Повернуть объект
+    // *1 Объект мигает. Прозрачность объекта.
+    public void fade(int second, Node node) {
+        FadeTransition ft = new FadeTransition(Duration.seconds(second), node);
+        ft.setFromValue(1);
+        ft.setToValue(0.1);
+        ft.setCycleCount(Timeline.INDEFINITE);
+        ft.setAutoReverse(true);
+        ft.play();
+    }
+
+    // Повернуть объект
     public void rotate(int second, Node node, int count) {
         RotateTransition rt = new RotateTransition(Duration.seconds(second), node);
         rt.setFromAngle(0);

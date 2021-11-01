@@ -40,7 +40,7 @@ public class JavaFXApp3_3 extends Application {
         btn2.setOnAction(event -> {
             text.setText("");
             System.out.println("Log: Нажата кнопка btn2");
-            rotate(2,root,2);
+            rotate(2, root, 2);
         });
 
         root.getChildren().addAll(btn1, btn2, text);
@@ -51,6 +51,7 @@ public class JavaFXApp3_3 extends Application {
         primaryStage.show();
     }
 
+    // *1 Повернуть объект
     public void rotate(int second, Node node, int count) {
         RotateTransition rt = new RotateTransition(Duration.seconds(second), node);
         rt.setFromAngle(0);
